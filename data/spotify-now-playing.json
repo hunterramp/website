@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-02-27T21:33:28.956Z",
+  "updatedAt": "2026-02-27T21:38:16.952Z",
   "isPlaying": false,
   "source": "error",
   "track": null,
-  "error": "Token request failed: 400"
+  "error": "Token request failed: 400 (invalid_grant - Invalid refresh token)"
 }
