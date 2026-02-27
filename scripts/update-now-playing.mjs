@@ -1,10 +1,16 @@
 import fs from "node:fs/promises";
 
-const {
-  SPOTIFY_CLIENT_ID,
-  SPOTIFY_CLIENT_SECRET,
-  SPOTIFY_REFRESH_TOKEN
-} = process.env;
+function sanitizeSecret(value) {
+  if (!value) {
+    return "";
+  }
+
+  return value.trim().replace(/^['"]|['"]$/g, "");
+}
+
+const SPOTIFY_CLIENT_ID = sanitizeSecret(process.env.SPOTIFY_CLIENT_ID);
+const SPOTIFY_CLIENT_SECRET = sanitizeSecret(process.env.SPOTIFY_CLIENT_SECRET);
+const SPOTIFY_REFRESH_TOKEN = sanitizeSecret(process.env.SPOTIFY_REFRESH_TOKEN);
 
 const OUTPUT_PATH = "data/spotify-now-playing.json";
 
