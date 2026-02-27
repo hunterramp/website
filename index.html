@@ -322,6 +322,53 @@
       font-size: 14px;
     }
 
+    .listeningCard{
+      grid-column: span 12;
+    }
+
+    .spotifyStatus{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .spotifyTrack{
+      margin-top: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .spotifyTrack img{
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .spotifyTitle{
+      margin: 0;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    .spotifyMeta{
+      margin: 2px 0 0;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .spotifyMeta a{
+      color: var(--text);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
     .tags{
       margin-top: 12px;
       display: flex;
@@ -468,6 +515,23 @@
               <a class="btn" href="https://www.linkedin.com/in/hunterramp/">LinkedIn</a>
             </div>
           </div>
+
+          <div class="card listeningCard" id="listening">
+            <h2>What I&apos;m Listening To</h2>
+            <p class="spotifyStatus" id="spotify-status">
+              Loading latest track...
+            </p>
+            <div class="spotifyTrack" id="spotify-track" hidden>
+              <img id="spotify-cover" src="" alt="Album cover" width="60" height="60" />
+              <div>
+                <p class="spotifyTitle" id="spotify-title">-</p>
+                <p class="spotifyMeta" id="spotify-artist">-</p>
+                <p class="spotifyMeta">
+                  <a id="spotify-link" href="#" target="_blank" rel="noopener noreferrer">Open in Spotify</a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -492,10 +556,77 @@
       return age;
     }
 
+    function setSpotifyStatus(message) {
+      document.getElementById("spotify-status").textContent = message;
+    }
+
+    function clearSpotifyTrack() {
+      document.getElementById("spotify-track").hidden = true;
+    }
+
+    function renderSpotifyTrack(track, prefix) {
+      var card = document.getElementById("spotify-track");
+      var cover = document.getElementById("spotify-cover");
+      var title = document.getElementById("spotify-title");
+      var artist = document.getElementById("spotify-artist");
+      var link = document.getElementById("spotify-link");
+      var names = Array.isArray(track.artists) ? track.artists.join(", ") : "Unknown artist";
+
+      cover.src = track.imageUrl || "";
+      title.textContent = prefix + ": " + (track.name || "Unknown track");
+      artist.textContent = names;
+      link.href = track.spotifyUrl || "https://open.spotify.com/";
+      card.hidden = false;
+    }
+
+    function formatUpdatedAt(value) {
+      if (!value) {
+        return "";
+      }
+
+      var date = new Date(value);
+      return date.toLocaleString(undefined, {
+        month: "short",
+        day: "numeric",
+        hour: "numeric",
+        minute: "2-digit"
+      });
+    }
+
+    async function loadSpotifyListening() {
+      try {
+        var response = await fetch("/data/spotify-now-playing.json?ts=" + Date.now(), {
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error("Could not load listening activity.");
+        }
+
+        var data = await response.json();
+        var track = data.track;
+        var label = data.isPlaying ? "Now playing" : "Last played";
+        var updatedLabel = formatUpdatedAt(data.updatedAt);
+
+        if (track && track.name) {
+          renderSpotifyTrack(track, label);
+          setSpotifyStatus(updatedLabel ? "Updated " + updatedLabel : "Updated recently");
+          return;
+        }
+
+        clearSpotifyTrack();
+        setSpotifyStatus("No recent Spotify activity found.");
+      } catch (error) {
+        clearSpotifyTrack();
+        setSpotifyStatus("Listening data is temporarily unavailable.");
+      }
+    }
+
     document.getElementById("wesley-age").textContent = getAge("2021-02-04");
     document.getElementById("charlotte-age").textContent = getAge("2023-03-17");
     document.getElementById("software-age").textContent = getAge("2017-1-1");
     document.getElementById("y").textContent = new Date().getFullYear();
+    loadSpotifyListening();
   </script>
 </body>
 </html>
