@@ -607,10 +607,21 @@
         var track = data.track;
         var label = data.isPlaying ? "Now playing" : "Last played";
         var updatedLabel = formatUpdatedAt(data.updatedAt);
+        var hasError = data.source === "error";
 
         if (track && track.name) {
           renderSpotifyTrack(track, label);
-          setSpotifyStatus(updatedLabel ? "Updated " + updatedLabel : "Updated recently");
+          if (hasError) {
+            setSpotifyStatus("Spotify sync issue. Showing last successful track.");
+          } else {
+            setSpotifyStatus(updatedLabel ? "Updated " + updatedLabel : "Updated recently");
+          }
+          return;
+        }
+
+        if (hasError) {
+          clearSpotifyTrack();
+          setSpotifyStatus("Spotify sync issue. Check workflow logs/secrets.");
           return;
         }
 

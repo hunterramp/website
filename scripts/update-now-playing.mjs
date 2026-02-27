@@ -8,6 +8,15 @@ const {
 
 const OUTPUT_PATH = "data/spotify-now-playing.json";
 
+async function readExistingPayload() {
+  try {
+    const raw = await fs.readFile(OUTPUT_PATH, "utf8");
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
 function required(name, value) {
   if (!value) {
     throw new Error(`Missing required env var: ${name}`);
@@ -52,7 +61,20 @@ async function getAccessToken() {
   });
 
   if (!response.ok) {
-    throw new Error(`Token request failed: ${response.status}`);
+    let detail = "";
+    try {
+      const errorBody = await response.json();
+      if (errorBody?.error) {
+        detail = errorBody.error;
+      }
+      if (errorBody?.error_description) {
+        detail += detail ? ` - ${errorBody.error_description}` : errorBody.error_description;
+      }
+    } catch {
+      detail = "";
+    }
+
+    throw new Error(`Token request failed: ${response.status}${detail ? ` (${detail})` : ""}`);
   }
 
   const data = await response.json();
@@ -116,6 +138,7 @@ async function getListeningPayload() {
 
 async function main() {
   let payload;
+  const existing = await readExistingPayload();
 
   try {
     payload = await getListeningPayload();
@@ -124,7 +147,7 @@ async function main() {
       updatedAt: new Date().toISOString(),
       isPlaying: false,
       source: "error",
-      track: null,
+      track: existing?.track ?? null,
       error: error instanceof Error ? error.message : "Unknown error"
     };
   }
