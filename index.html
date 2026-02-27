@@ -81,7 +81,7 @@
 
     .brand h1{
       margin: 0;
-      font-size: clamp(2px, 3vw, 32px);
+      font-size: clamp(24px, 3vw, 32px);
       letter-spacing: -0.02em;
     }
 
@@ -125,9 +125,76 @@
     }
 
     @media (max-width: 820px){
-      .hero{ grid-template-columns: 1fr; }
-      header{ align-items: flex-start; }
-      nav{ justify-content: flex-start; }
+      .wrap{
+        padding: 20px 16px 44px;
+      }
+
+      header{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+        padding: 10px 0 18px;
+      }
+
+      .brand{
+        gap: 12px;
+      }
+
+      .brand > img{
+        width: 54px;
+        height: 54px;
+      }
+
+      .brand p{
+        font-size: 13px;
+      }
+
+      nav{
+        width: 100%;
+        justify-content: stretch;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .pill{
+        text-align: center;
+        padding: 10px 12px;
+      }
+
+      .hero{
+        grid-template-columns: 1fr;
+        padding: 18px;
+        gap: 14px;
+      }
+
+      .headline{
+        font-size: 34px;
+        line-height: 1.2;
+      }
+
+      .lede{
+        font-size: 14px;
+      }
+
+      .sideCard{
+        padding: 12px;
+      }
+
+      .headshot{
+        width: 72%;
+        max-width: 200px;
+        height: auto;
+        margin: 0 auto 10px;
+      }
+
+      .meta{
+        gap: 8px;
+      }
+
+      .metaRow{
+        padding: 9px;
+      }
     }
 
     .headline{
@@ -182,8 +249,9 @@
     }
 
     .headshot{
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      max-width: 280px;
+      height: auto;
       display: block;
       margin: 0 auto 12px;
       border-radius: 12px;
@@ -388,9 +456,8 @@
               Best way to reach me is email. You can also find me on the platforms below.
             </p>
             <div class="ctaRow" style="margin-top: 12px;">
-              <a class="btn primary" href="mailto:hunterramp@gmail.com">Email</a>
+              <a class="btn primary" href="mailto:hunter@hunterramp.com">Email</a>
               <a class="btn" href="https://www.linkedin.com/in/hunterramp/">LinkedIn</a>
-              <a class="btn" href="https://github.com/hunterramp">GitHub</a>
             </div>
           </div>
         </div>
