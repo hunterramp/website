@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-02-27T22:47:10.884Z",
+  "updatedAt": "2026-02-27T23:14:07.282Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "Alleycat",
+    "name": "Rubber Band Man (with Hozier)",
     "artists": [
-      "Mumford & Sons"
+      "Mumford & Sons",
+      "Hozier"
     ],
     "album": "Prizefighter",
     "imageUrl": "https://i.scdn.co/image/ab67616d0000b273192f60a400ee278d0fa10d8d",
-    "spotifyUrl": "https://open.spotify.com/track/6JleMHKhuoAHMq6Ureh6FM"
+    "spotifyUrl": "https://open.spotify.com/track/1EgeiGYBJouzsieXUiX2wF"
   }
 }
