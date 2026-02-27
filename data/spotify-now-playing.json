@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-02-27T22:01:50.654Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-02-27T22:15:12.644Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Like God Intended",
+    "name": "I See You",
     "artists": [
-      "Jordan Davis"
+      "Odhran Murphy"
     ],
-    "album": "Like God Intended",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738826708f5775cdc8710be796",
-    "spotifyUrl": "https://open.spotify.com/track/1dPKGWxMILRedoNtjUa8mh"
+    "album": "I See You",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273572fe8d2c6c69ca8cbc39cc2",
+    "spotifyUrl": "https://open.spotify.com/track/0QFokWg1OVO1gAfRMJSdVl"
   }
 }
