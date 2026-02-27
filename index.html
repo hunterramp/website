@@ -14,6 +14,13 @@
   <meta property="og:image" content="https://hunterramp.com/assets/headshot.jpg" />
   <meta property="og:image:alt" content="Hunter Ramp" />
   <link rel="icon" type="image/svg+xml" href="assets/logo-hr.svg" />
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8RGMG1F9G3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-8RGMG1F9G3");
+  </script>
   <title>Hunter Ramp</title>
 
   <style>
@@ -366,7 +373,8 @@
       color: var(--faint);
       font-size: 12px;
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      text-align: center;
       gap: 10px;
       flex-wrap: wrap;
     }
@@ -487,8 +495,6 @@
     document.getElementById("wesley-age").textContent = getAge("2021-02-04");
     document.getElementById("charlotte-age").textContent = getAge("2023-03-17");
     document.getElementById("software-age").textContent = getAge("2017-1-1");
-
-    // Set year automatically
     document.getElementById("y").textContent = new Date().getFullYear();
   </script>
 </body>
