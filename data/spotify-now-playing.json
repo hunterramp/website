@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-02-27T23:14:07.282Z",
+  "updatedAt": "2026-02-27T23:37:28.458Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "Rubber Band Man (with Hozier)",
+    "name": "Surrender",
     "artists": [
-      "Mumford & Sons",
-      "Hozier"
+      "Mumford & Sons"
     ],
-    "album": "Prizefighter",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273192f60a400ee278d0fa10d8d",
-    "spotifyUrl": "https://open.spotify.com/track/1EgeiGYBJouzsieXUiX2wF"
+    "album": "RUSHMERE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fc54e27cde777ca9d302f0a4",
+    "spotifyUrl": "https://open.spotify.com/track/6fVNQ8THG7JRE7kXgAriaj"
   }
 }
