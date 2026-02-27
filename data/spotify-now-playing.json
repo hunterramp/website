@@ -1,7 +1,14 @@
 {
-  "updatedAt": "2026-02-27T21:56:22.011Z",
+  "updatedAt": "2026-02-27T22:01:50.654Z",
   "isPlaying": false,
-  "source": "error",
-  "track": null,
-  "error": "Token request failed: 400 (invalid_grant - Invalid refresh token)"
+  "source": "recently-played",
+  "track": {
+    "name": "Like God Intended",
+    "artists": [
+      "Jordan Davis"
+    ],
+    "album": "Like God Intended",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738826708f5775cdc8710be796",
+    "spotifyUrl": "https://open.spotify.com/track/1dPKGWxMILRedoNtjUa8mh"
+  }
 }
