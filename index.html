@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal website of Hunter Ramp" />
+  <link rel="icon" type="image/svg+xml" href="assets/logo-hr.svg" />
+  <title>Hunter Ramp</title>
+
+  <style>
+    :root{
+      --bg: #0b0d12;
+      --card: rgba(255,255,255,0.06);
+      --card-strong: rgba(255,255,255,0.10);
+      --text: rgba(255,255,255,0.92);
+      --muted: rgba(255,255,255,0.70);
+      --faint: rgba(255,255,255,0.55);
+      --border: rgba(255,255,255,0.12);
+      --shadow: 0 18px 60px rgba(0,0,0,0.45);
+      --radius: 18px;
+      --max: 980px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      color: var(--text);
+      background-color: var(--bg);
+      background-image:
+        linear-gradient(180deg, #101523 0%, #0c1018 45%, #0b0d12 100%),
+        radial-gradient(1400px 900px at 15% 5%, rgba(47, 71, 125, 0.24), transparent 70%),
+        radial-gradient(1200px 900px at 85% 20%, rgba(255,122,177,0.16), transparent 72%),
+        radial-gradient(1100px 900px at 50% 100%, rgba(120,255,214,0.12), transparent 72%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      line-height: 1.55;
+    }
+
+    a{
+      color: var(--text);
+      text-decoration: none;
+    }
+    a:hover{ text-decoration: underline; }
+
+    .wrap{
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0 26px;
+    }
+
+    .brand{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brandText{
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .brand h1{
+      margin: 0;
+      font-size: clamp(2px, 3vw, 32px);
+      letter-spacing: -0.02em;
+    }
+
+    .brand p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    nav{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill{
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      font-size: 14px;
+    }
+    .pill:hover{
+      background: var(--card-strong);
+      text-decoration: none;
+    }
+
+    .hero{
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+      box-shadow: var(--shadow);
+      padding: 22px;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 18px;
+      align-items: start;
+    }
+
+    @media (max-width: 820px){
+      .hero{ grid-template-columns: 1fr; }
+      header{ align-items: flex-start; }
+      nav{ justify-content: flex-start; }
+    }
+
+    .headline{
+      margin: 0 0 10px;
+      font-size: clamp(22px, 2.6vw, 30px);
+      letter-spacing: -0.02em;
+    }
+
+    .lede{
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 15px;
+      max-width: 64ch;
+    }
+
+    .ctaRow{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.08);
+      font-size: 14px;
+      text-decoration: none;
+    }
+    .btn:hover{
+      background: rgba(255,255,255,0.12);
+      text-decoration: none;
+    }
+    .btn.primary{
+      background: rgba(122,162,255,0.22);
+      border-color: rgba(122,162,255,0.30);
+    }
+    .btn.primary:hover{
+      background: rgba(122,162,255,0.30);
+    }
+
+    .sideCard{
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(0,0,0,0.12);
+      padding: 14px;
+    }
+
+    .headshot{
+      width: 90%;
+      height: 90%;
+      display: block;
+      margin: 0 auto 12px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      object-fit: cover;
+      box-shadow: 0 12px 24px rgba(0,0,0,0.30);
+    }
+
+    .meta{
+      display: grid;
+      gap: 10px;
+    }
+
+    .metaRow{
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 10px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .k{ color: var(--faint); font-size: 13px; }
+    .v{ color: var(--text); font-size: 13px; text-align: right; }
+
+    section{
+      margin-top: 20px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .grid{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .card{
+      grid-column: span 6;
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      background: var(--card);
+      box-shadow: 0 10px 34px rgba(0,0,0,0.28);
+      padding: 16px;
+    }
+
+    @media (max-width: 820px){
+      .card{ grid-column: span 12; }
+    }
+
+    .card h2{
+      margin: 0 0 8px;
+      font-size: 16px;
+      letter-spacing: -0.01em;
+    }
+
+    .card p{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .tags{
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag{
+      font-size: 12px;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.05);
+      border-radius: 999px;
+      padding: 6px 10px;
+    }
+
+    .project{
+      display: grid;
+      gap: 6px;
+      padding: 12px;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.05);
+      margin-top: 10px;
+    }
+
+    .projectTop{
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+
+    .project a{
+      text-decoration: none;
+    }
+    .project a:hover{
+      text-decoration: underline;
+    }
+
+    .small{
+      font-size: 12px;
+      color: var(--faint);
+    }
+
+    footer{
+      margin-top: 26px;
+      color: var(--faint);
+      font-size: 12px;
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    /* reduced motion */
+    @media (prefers-reduced-motion: reduce){
+      * { scroll-behavior: auto !important; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <img src="assets/logo-hr.svg" alt="HR logo" width="60" height="60" />
+        <div class="brandText">
+          <h1>Hunter Ramp</h1>
+          <p>Husband • Father • Engineer</p>
+        </div>
+      </div>
+
+      <nav aria-label="Primary">
+        <a class="pill" href="#about">About</a>
+        <a class="pill" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero" role="region" aria-label="Intro">
+        <div>
+            <h2 class="headline">I build software that works when it really counts.</h2>
+            <p class="lede">
+                I’ve spent <span id="software-age"></span>+ years building software where there’s no room for guesswork and
+                “pretty close” is not good enough. I help teams turn complex, regulated requirements
+                into secure, reliable products across embedded systems, mobile apps, and cloud
+                platforms. My approach is simple: build trust, keep things practical, and ship work
+                that holds up in the real world.
+            </p>
+        </div>
+
+        <aside class="sideCard" aria-label="Quick info">
+          <img
+            class="headshot"
+            src="assets/headshot.jpg"
+            alt="Portrait of Hunter Ramp"
+            width="300"
+            height="300"
+          />
+          <div class="meta">
+            <div class="metaRow">
+              <div class="k">Home Base</div>
+              <div class="v">San Diego, CA</div>
+            </div>
+            <div class="metaRow">
+              <div class="k">Main Quest</div>
+              <div class="v">Turning caffeine into clean software</div>
+            </div>
+            <div class="metaRow">
+              <div class="k">Currently</div>
+              <div class="v">Chasing toddlers and shipping code</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <section id="about" aria-label="About section">
+        <div class="grid">
+          <div class="card">
+            <h2>About</h2>
+            <p>
+              From growing up in Sitka, AK to Gonzaga University and now life in San Diego, CA,
+              it’s been a great ride. I’m married to my wife Emily, and our house is happily chaotic
+              thanks to our two kids, Wesley (<span id="wesley-age"></span>) and Charlotte
+              (<span id="charlotte-age"></span>).
+              <br><br>
+              Family is at the center of everything I do, and I try to bring that same grounded,
+              steady approach into my work and relationships. Outside of work, I enjoy simple things:
+              getting out for pickleball, spending time with my family, and mowing the grass when I
+              can sneak in a quiet hour.
+            </p>
+          </div>
+
+          <div class="card" id="contact">
+            <h2>Contact</h2>
+            <p>
+              Best way to reach me is email. You can also find me on the platforms below.
+            </p>
+            <div class="ctaRow" style="margin-top: 12px;">
+              <a class="btn primary" href="mailto:hunterramp@gmail.com">Email</a>
+              <a class="btn" href="https://www.linkedin.com/in/hunterramp/">LinkedIn</a>
+              <a class="btn" href="https://github.com/hunterramp">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div>© <span id="y"></span> Hunter Ramp</div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    function getAge(birthDateStr) {
+      var today = new Date();
+      var birthDate = new Date(birthDateStr);
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var monthDiff = today.getMonth() - birthDate.getMonth();
+      var dayDiff = today.getDate() - birthDate.getDate();
+
+      if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
+        age -= 1;
+      }
+
+      return age;
+    }
+
+    document.getElementById("wesley-age").textContent = getAge("2021-02-04");
+    document.getElementById("charlotte-age").textContent = getAge("2023-03-17");
+    document.getElementById("software-age").textContent = getAge("2017-1-1");
+
+    // Set year automatically
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
