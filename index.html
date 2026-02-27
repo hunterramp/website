@@ -239,6 +239,11 @@
       font-size: 14px;
       text-decoration: none;
     }
+    button.btn{
+      color: var(--text);
+      cursor: pointer;
+      appearance: none;
+    }
     .btn:hover{
       background: rgba(255,255,255,0.12);
       text-decoration: none;
@@ -311,6 +316,8 @@
 
     @media (max-width: 820px){
       .card{ grid-column: span 12; }
+      .dadModeCard{ grid-column: span 12; }
+      .listeningCard{ grid-column: span 12; }
     }
 
     .card h2{
@@ -325,8 +332,36 @@
       font-size: 14px;
     }
 
-    .listeningCard{
-      grid-column: span 12;
+    .listeningCard{ grid-column: span 6; }
+    .dadModeCard{ grid-column: span 6; }
+
+    @media (max-width: 820px){
+      .listeningCard{ grid-column: span 12; }
+      .dadModeCard{ grid-column: span 12; }
+    }
+
+    .dadModeStatus{
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.05);
+    }
+
+    .dadModeLine{
+      margin: 0;
+      color: var(--text);
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .dadModeNote{
+      margin: 6px 0 0;
+      font-size: 13px;
+      color: var(--muted);
     }
 
     .spotifyStatus{
@@ -508,14 +543,18 @@
             </p>
           </div>
 
-          <div class="card" id="contact">
-            <h2>Contact</h2>
-            <p>
-              Best way to reach me is email. You can also find me on the platforms below.
-            </p>
+          <div class="card dadModeCard" id="dad-mode">
+            <h2>Dad Mode Status</h2>
+            <p>Live household mission, updated by time of day.</p>
+            <div class="dadModeStatus" aria-live="polite">
+              <p class="dadModeLine">
+                <span id="dad-mode-emoji">🛠️</span>
+                <strong id="dad-mode-title">Initializing Dad Mode...</strong>
+              </p>
+              <p class="dadModeNote" id="dad-mode-note">Loading active mission.</p>
+            </div>
             <div class="ctaRow" style="margin-top: 12px;">
-              <a class="btn primary" href="mailto:hunter@hunterramp.com">Email</a>
-              <a class="btn" href="https://www.linkedin.com/in/hunterramp/">LinkedIn</a>
+              <button class="btn" id="dad-mode-shuffle" type="button">Shuffle Status</button>
             </div>
           </div>
 
@@ -533,6 +572,17 @@
                   <a id="spotify-link" href="#" target="_blank" rel="noopener noreferrer">Open in Spotify</a>
                 </p>
               </div>
+            </div>
+          </div>
+
+          <div class="card" id="contact">
+            <h2>Contact</h2>
+            <p>
+                Best way to reach me is email. You can also find me on the platforms below.
+            </p>
+            <div class="ctaRow" style="margin-top: 12px;">
+                <a class="btn primary" href="mailto:hunter@hunterramp.com">Email</a>
+                <a class="btn" href="https://www.linkedin.com/in/hunterramp/">LinkedIn</a>
             </div>
           </div>
         </div>
@@ -636,10 +686,95 @@
       }
     }
 
+    function getDadModeByHour(hour, isWeekend) {
+      if (isWeekend) {
+        if (hour < 8) {
+          return { emoji: "🧇", title: "Slow-Morning Family Time", note: "Pancake negotiations, cartoons, and coffee refills." };
+        }
+        if (hour < 18) {
+          return { emoji: "👨‍👩‍👧‍👦", title: "Family Time", note: "Weekend side quests, snacks, and memory-making in progress." };
+        }
+        return { emoji: "🍿", title: "Family Wind-Down", note: "Couch crew assembled. Vibes are cozy and slightly chaotic." };
+      }
+
+      if (hour < 6) {
+        return { emoji: "🌙", title: "Stealth Dad Patrol", note: "Quietly completing missions without waking the tiny humans." };
+      }
+      if (hour < 7) {
+        return { emoji: "🥣", title: "Breakfast Logistics", note: "Snacks deployed, tiny humans fueled, coffee in progress." };
+      }
+      if (hour < 8) {
+        return { emoji: "🚙", title: "Morning Transport Ops", note: "Cargo secured. Drop-off route loaded." };
+      }
+      if (hour < 15) {
+        return { emoji: "💻", title: "Builder Mode", note: "Turning ideas and caffeine into clean software." };
+      }
+      if (hour < 17) {
+        return { emoji: "🧸", title: "Toddler Operations", note: "High-energy bug triage with Wesley and Charlotte." };
+      }
+      if (hour < 18) {
+        return { emoji: "🍝", title: "Dinner Logistics", note: "Fork distribution and selective-eating diplomacy underway." };
+      }
+      if (hour < 20) {
+        return { emoji: "🏓", title: "Pickleball Window", note: "If possible: quick game. If not: family side quests." };
+      }
+      return { emoji: "📚", title: "Bedtime Sequence", note: "Stories, negotiations, and lights-out orchestration." };
+    }
+
+    function getRandomDadMode() {
+      var options = [
+        { emoji: "🧃", title: "Snack Referee", note: "Settling complex disputes over the best snack cup." },
+        { emoji: "🛝", title: "Park Adventure Lead", note: "Testing structural limits of swings and slides." },
+        { emoji: "🌱", title: "Lawn Commander", note: "Mower active. Stripe pattern under review." },
+        { emoji: "🚿", title: "Bath Time Coordinator", note: "Water level correct, chaos level elevated." },
+        { emoji: "🧠", title: "Dad Joke Compiler", note: "Shipping puns with low latency and mixed reviews." }
+      ];
+
+      return options[Math.floor(Math.random() * options.length)];
+    }
+
+    function renderDadMode(mode) {
+      document.getElementById("dad-mode-emoji").textContent = mode.emoji;
+      document.getElementById("dad-mode-title").textContent = mode.title;
+      document.getElementById("dad-mode-note").textContent = mode.note;
+    }
+
+    function getSanDiegoTimeInfo() {
+      try {
+        var parts = new Intl.DateTimeFormat("en-US", {
+          weekday: "short",
+          hour: "2-digit",
+          hour12: false,
+          timeZone: "America/Los_Angeles"
+        }).formatToParts(new Date());
+        var hourPart = parts.find(function (part) { return part.type === "hour"; });
+        var weekdayPart = parts.find(function (part) { return part.type === "weekday"; });
+        var fallback = new Date();
+        var weekday = weekdayPart ? weekdayPart.value : "";
+        var weekendDays = ["Sat", "Sun"];
+
+        return {
+          hour: hourPart ? Number(hourPart.value) : fallback.getHours(),
+          isWeekend: weekendDays.indexOf(weekday) !== -1
+        };
+      } catch (error) {
+        var localDate = new Date();
+        return {
+          hour: localDate.getHours(),
+          isWeekend: localDate.getDay() === 0 || localDate.getDay() === 6
+        };
+      }
+    }
+
     document.getElementById("wesley-age").textContent = getAge("2021-02-04");
     document.getElementById("charlotte-age").textContent = getAge("2023-03-17");
     document.getElementById("software-age").textContent = getAge("2017-1-1");
     document.getElementById("y").textContent = new Date().getFullYear();
+    var sanDiegoTime = getSanDiegoTimeInfo();
+    renderDadMode(getDadModeByHour(sanDiegoTime.hour, sanDiegoTime.isWeekend));
+    document.getElementById("dad-mode-shuffle").addEventListener("click", function () {
+      renderDadMode(getRandomDadMode());
+    });
     loadSpotifyListening();
   </script>
 </body>
