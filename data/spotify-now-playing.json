@@ -1,6 +1,7 @@
 {
-  "updatedAt": null,
+  "updatedAt": "2026-02-27T21:31:49.360Z",
   "isPlaying": false,
+  "source": "error",
   "track": null,
-  "source": "none"
+  "error": "Token request failed: 400"
 }
