@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-02-28T00:55:22.734Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-02-28T02:30:23.959Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "hate me too",
+    "name": "Glory Bound",
     "artists": [
-      "asiris",
-      "Henrik"
+      "ELI GABLE"
     ],
-    "album": "hate me too",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731b56f8975c3977497604ebe9",
-    "spotifyUrl": "https://open.spotify.com/track/0tUlhKNeSosXCmzMG8H5Zd"
+    "album": "OUTSKIRTS",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fca4e52ea41187ae87206d63",
+    "spotifyUrl": "https://open.spotify.com/track/4acxEhFctnmJgkznclwIlK"
   }
 }
