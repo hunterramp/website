@@ -151,11 +151,13 @@ async function handleResumeDecision(request, env) {
       subject: "Resume Request Approved - Hunter Ramp",
       html: `
         <p>Hi ${escapeHtml(record.requester.name)},</p>
-        <p>Thanks for your interest. Your resume request has been approved.</p>
-        <p>Please find the PDF attached.</p>
-        <p>Best,<br/>Hunter Ramp</p>
+        <p>Thank you for reaching out regarding my resume. Please find it attached for your review..</p>
+        <p>If you need any additional information or would like to connect to discuss further, feel free to let me know</p>
+        <p>Best,<br/>Hunter Ramp<br/>
+          <a href="https://hunterramp.com" target="_blank" rel="noopener noreferrer">hunterramp.com</a>
+        </p>
       `,
-      text: `Hi ${record.requester.name},\n\nThanks for your interest. Your resume request has been approved.\nPlease find the PDF attached.\n\nBest,\nHunter Ramp`,
+      text: `Hi ${record.requester.name}, Thank you for reaching out regarding my resume. Please find it attached for your review. If you need any additional information or would like to connect to discuss further, feel free to let me know. Best, Hunter Ramp hunterramp.com`,
       attachments: [resumeAttachment]
     });
 
