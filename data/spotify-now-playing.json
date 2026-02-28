@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-02-28T16:13:34.359Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-02-28T16:55:45.554Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "oasis for my soul",
+    "name": "NEVER GET USED TO THIS (feat. JVKE)",
     "artists": [
-      "Strings & Heart"
+      "Forrest Frank",
+      "JVKE"
     ],
-    "album": "Plastic Wine",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d8285573731927843da749bf",
-    "spotifyUrl": "https://open.spotify.com/track/6uvXzbxXMwrxU5vSKTdl6O"
+    "album": "CHILD OF GOD",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273500c84a64b89a118c27e5f59",
+    "spotifyUrl": "https://open.spotify.com/track/25f7KnoDqO7nBbPahi15UE"
   }
 }
