@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-02-28T15:51:54.036Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-02-28T16:13:34.359Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Fire on Up",
+    "name": "oasis for my soul",
     "artists": [
-      "Paper Kings"
+      "Strings & Heart"
     ],
-    "album": "Look at Me Now",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736c264e7722b0eaeaf4f66ea3",
-    "spotifyUrl": "https://open.spotify.com/track/23tBMn5oaTZfW8qJ6xjmH8"
+    "album": "Plastic Wine",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d8285573731927843da749bf",
+    "spotifyUrl": "https://open.spotify.com/track/6uvXzbxXMwrxU5vSKTdl6O"
   }
 }
