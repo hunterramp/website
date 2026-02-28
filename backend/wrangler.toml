@@ -1,0 +1,21 @@
+name = "hunterramp-resume-api"
+main = "src/worker.js"
+compatibility_date = "2026-02-28"
+
+# Create this KV namespace and paste IDs after running:
+# npx wrangler kv namespace create RESUME_REQUESTS
+# npx wrangler kv namespace create RESUME_REQUESTS --preview
+[[kv_namespaces]]
+binding = "RESUME_REQUESTS"
+id = "4fd626bbc6804abd822416b072978ce8"
+preview_id = "d17874ded9404585b61e94a99347d07e"
+
+[[r2_buckets]]
+binding = "RESUME_FILES"
+bucket_name = "hunterramp-resume-files"
+
+[vars]
+SITE_URL = "https://hunterramp.com"
+HUNTER_EMAIL = "hunter@hunterramp.com"
+RESEND_FROM = "Hunter Ramp <hunter@hunterramp.com>"
+RESUME_PDF_KEY = "Hunter-Ramp-Resume.pdf"

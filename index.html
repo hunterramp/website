@@ -407,6 +407,84 @@
       text-underline-offset: 2px;
     }
 
+    dialog{
+      width: min(540px, calc(100vw - 28px));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 0;
+      background: #121723;
+      color: var(--text);
+      box-shadow: 0 24px 70px rgba(0,0,0,0.55);
+    }
+
+    dialog::backdrop{
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(2px);
+    }
+
+    .dialogInner{
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .dialogTitle{
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .dialogLead{
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .field{
+      display: grid;
+      gap: 6px;
+    }
+
+    .field label{
+      font-size: 13px;
+      color: var(--faint);
+    }
+
+    .field input,
+    .field textarea{
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,0.04);
+      color: var(--text);
+      font-size: 14px;
+      padding: 10px 11px;
+      font-family: inherit;
+    }
+
+    .field textarea{
+      min-height: 96px;
+      resize: vertical;
+    }
+
+    .dialogActions{
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      margin-top: 2px;
+    }
+
+    .resumeConfirm{
+      margin-top: 10px;
+      font-size: 13px;
+      color: #b8ffd7;
+      border: 1px solid rgba(112, 255, 183, 0.35);
+      background: rgba(112, 255, 183, 0.10);
+      border-radius: 10px;
+      padding: 10px 12px;
+    }
+
     .tags{
       margin-top: 12px;
       display: flex;
@@ -578,11 +656,15 @@
           <div class="card" id="contact">
             <h2>Contact</h2>
             <p>
-                Best way to reach me is email. You can also find me on the platforms below.
+              Best way to reach me is email. You can also find me on the platforms below.
             </p>
             <div class="ctaRow" style="margin-top: 12px;">
-                <a class="btn primary" href="mailto:hunter@hunterramp.com">Email</a>
-                <a class="btn" href="https://www.linkedin.com/in/hunterramp/">LinkedIn</a>
+              <a class="btn primary" href="mailto:hunter@hunterramp.com">Email</a>
+              <a class="btn" href="https://www.linkedin.com/in/hunterramp/">LinkedIn</a>
+              <button class="btn" id="request-resume-btn" type="button">Request Resumé</button>
+            </div>
+            <div class="resumeConfirm" id="resume-request-confirm" hidden>
+              Request sent. If approved, I'll email you a PDF copy of my resumé.
             </div>
           </div>
         </div>
@@ -593,6 +675,40 @@
       </footer>
     </main>
   </div>
+
+  <dialog id="resume-request-dialog" aria-labelledby="resume-request-title">
+    <form class="dialogInner" id="resume-request-form">
+      <h3 class="dialogTitle" id="resume-request-title">Request My Resumé</h3>
+      <p class="dialogLead">
+        Share a few details and I'll review and email you back.
+      </p>
+
+      <div class="field">
+        <label for="requester-name">Your Name</label>
+        <input id="requester-name" name="requester_name" type="text" required />
+      </div>
+
+      <div class="field">
+        <label for="requester-email">Your Email</label>
+        <input id="requester-email" name="requester_email" type="email" required />
+      </div>
+
+      <div class="field">
+        <label for="requester-company">Company</label>
+        <input id="requester-company" name="requester_company" type="text" required />
+      </div>
+
+      <div class="field">
+        <label for="requester-reason">Reason for Request</label>
+        <textarea id="requester-reason" name="requester_reason" required></textarea>
+      </div>
+
+      <div class="dialogActions">
+        <button class="btn" type="button" id="resume-cancel-btn">Cancel</button>
+        <button class="btn primary" type="submit">Request Resumé</button>
+      </div>
+    </form>
+  </dialog>
 
   <script>
     function getAge(birthDateStr) {
@@ -775,6 +891,62 @@
     document.getElementById("dad-mode-shuffle").addEventListener("click", function () {
       renderDadMode(getRandomDadMode());
     });
+
+    var resumeDialog = document.getElementById("resume-request-dialog");
+    var resumeForm = document.getElementById("resume-request-form");
+    var resumeConfirm = document.getElementById("resume-request-confirm");
+    var RESUME_REQUEST_API = "https://hunterramp-resume-api.hunterramp.workers.dev/api/resume-request";
+
+    document.getElementById("request-resume-btn").addEventListener("click", function () {
+      resumeDialog.showModal();
+    });
+
+    document.getElementById("resume-cancel-btn").addEventListener("click", function () {
+      resumeDialog.close();
+    });
+
+    resumeForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!resumeForm.checkValidity()) {
+        resumeForm.reportValidity();
+        return;
+      }
+
+      var name = document.getElementById("requester-name").value.trim();
+      var email = document.getElementById("requester-email").value.trim();
+      var company = document.getElementById("requester-company").value.trim();
+      var reason = document.getElementById("requester-reason").value.trim();
+      var payload = {
+        name: name,
+        email: email,
+        company: company,
+        reason: reason
+      };
+
+      fetch(RESUME_REQUEST_API, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: JSON.stringify(payload)
+      })
+        .then(function (response) {
+          if (!response.ok) {
+            throw new Error("Unable to send request.");
+          }
+          return response.json();
+        })
+        .then(function () {
+          resumeDialog.close();
+          resumeForm.reset();
+          resumeConfirm.hidden = false;
+        })
+        .catch(function () {
+          alert("Could not send request right now. Please try again in a minute.");
+        });
+    });
+
     loadSpotifyListening();
   </script>
 </body>
