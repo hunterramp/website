@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-02-28T20:38:08.393Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-02-28T23:10:53.901Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Smells Like Me",
+    "name": "Something Just Like This",
     "artists": [
-      "Charlie Puth"
+      "The Chainsmokers",
+      "Coldplay"
     ],
-    "album": "CHARLIE",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273043168fd87de1ce066b4afa3",
-    "spotifyUrl": "https://open.spotify.com/track/3brfhVrVESFlfqE1IdlFdp"
+    "album": "Memories...Do Not Open",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730c13d3d5a503c84fcc60ae94",
+    "spotifyUrl": "https://open.spotify.com/track/6RUKPb4LETWmmr3iAEQktW"
   }
 }
