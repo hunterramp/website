@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-02-28T14:11:40.868Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-02-28T15:51:54.036Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "I Hope It All Works Out",
+    "name": "Fire on Up",
     "artists": [
-      "Mark Ambor"
+      "Paper Kings"
     ],
-    "album": "Rockwood",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273da33127f62acdb0aca585e92",
-    "spotifyUrl": "https://open.spotify.com/track/2EOVIgPrZLoMEqi16x8KkW"
+    "album": "Look at Me Now",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736c264e7722b0eaeaf4f66ea3",
+    "spotifyUrl": "https://open.spotify.com/track/23tBMn5oaTZfW8qJ6xjmH8"
   }
 }
