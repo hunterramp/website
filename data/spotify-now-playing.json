@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-02-28T02:30:23.959Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-02-28T03:04:56.143Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
     "name": "Glory Bound",
     "artists": [
