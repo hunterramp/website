@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-02-28T23:10:53.901Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-02-28T23:33:26.950Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Something Just Like This",
+    "name": "JESUS IS COMING BACK SOON",
     "artists": [
-      "The Chainsmokers",
-      "Coldplay"
+      "Forrest Frank",
+      "Josiah Queen"
     ],
-    "album": "Memories...Do Not Open",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730c13d3d5a503c84fcc60ae94",
-    "spotifyUrl": "https://open.spotify.com/track/6RUKPb4LETWmmr3iAEQktW"
+    "album": "JESUS IS COMING BACK SOON",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fe6965e6eddc1ddee52fdc24",
+    "spotifyUrl": "https://open.spotify.com/track/3lDONs5jdDxJIHovAwgtsc"
   }
 }
