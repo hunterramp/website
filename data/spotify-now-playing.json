@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-02-27T23:54:24.447Z",
+  "updatedAt": "2026-02-28T00:55:22.734Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Heart's in The Heather",
+    "name": "hate me too",
     "artists": [
-      "Odhran Murphy"
+      "asiris",
+      "Henrik"
     ],
-    "album": "Heart's in The Heather",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ed1028ca1118fb4ed9f8fa49",
-    "spotifyUrl": "https://open.spotify.com/track/1FKkLcGa2uDltpB2uNJiCE"
+    "album": "hate me too",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731b56f8975c3977497604ebe9",
+    "spotifyUrl": "https://open.spotify.com/track/0tUlhKNeSosXCmzMG8H5Zd"
   }
 }
