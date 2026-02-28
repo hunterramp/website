@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-02-28T00:55:22.734Z",
+  "updatedAt": "2026-02-28T04:22:29.465Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "hate me too",
+    "name": "I Hope It All Works Out",
     "artists": [
-      "asiris",
-      "Henrik"
+      "Mark Ambor"
     ],
-    "album": "hate me too",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731b56f8975c3977497604ebe9",
-    "spotifyUrl": "https://open.spotify.com/track/0tUlhKNeSosXCmzMG8H5Zd"
+    "album": "Rockwood",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273da33127f62acdb0aca585e92",
+    "spotifyUrl": "https://open.spotify.com/track/2EOVIgPrZLoMEqi16x8KkW"
   }
 }
