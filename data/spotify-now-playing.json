@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-02-28T20:12:40.490Z",
+  "updatedAt": "2026-02-28T20:38:08.393Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Run Together",
+    "name": "Smells Like Me",
     "artists": [
-      "Mumford & Sons"
+      "Charlie Puth"
     ],
-    "album": "Prizefighter",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273192f60a400ee278d0fa10d8d",
-    "spotifyUrl": "https://open.spotify.com/track/7fR3gC4g2NVA16DKCRJr9M"
+    "album": "CHARLIE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273043168fd87de1ce066b4afa3",
+    "spotifyUrl": "https://open.spotify.com/track/3brfhVrVESFlfqE1IdlFdp"
   }
 }
