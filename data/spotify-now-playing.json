@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-02-28T19:48:36.975Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-02-28T20:12:40.490Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Alleycat",
+    "name": "Run Together",
     "artists": [
       "Mumford & Sons"
     ],
     "album": "Prizefighter",
     "imageUrl": "https://i.scdn.co/image/ab67616d0000b273192f60a400ee278d0fa10d8d",
-    "spotifyUrl": "https://open.spotify.com/track/6JleMHKhuoAHMq6Ureh6FM"
+    "spotifyUrl": "https://open.spotify.com/track/7fR3gC4g2NVA16DKCRJr9M"
   }
 }
