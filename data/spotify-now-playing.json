@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-02-28T16:55:45.554Z",
+  "updatedAt": "2026-02-28T17:11:52.310Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "NEVER GET USED TO THIS (feat. JVKE)",
+    "name": "Love Me To Heaven",
     "artists": [
-      "Forrest Frank",
-      "JVKE"
+      "Jonas Brothers"
     ],
-    "album": "CHILD OF GOD",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273500c84a64b89a118c27e5f59",
-    "spotifyUrl": "https://open.spotify.com/track/25f7KnoDqO7nBbPahi15UE"
+    "album": "Greetings From Your Hometown",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737b65cfeb8531165690538f0f",
+    "spotifyUrl": "https://open.spotify.com/track/0qCjAKgWrgThs17aU0a6P9"
   }
 }
