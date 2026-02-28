@@ -23,6 +23,20 @@ async function readExistingPayload() {
   }
 }
 
+function comparablePayload(payload) {
+  if (!payload || typeof payload !== "object") {
+    return payload;
+  }
+
+  const clone = { ...payload };
+  delete clone.updatedAt;
+  return clone;
+}
+
+function hasMeaningfulChange(previous, next) {
+  return JSON.stringify(comparablePayload(previous)) !== JSON.stringify(comparablePayload(next));
+}
+
 function required(name, value) {
   if (!value) {
     throw new Error(`Missing required env var: ${name}`);
@@ -173,6 +187,10 @@ async function main() {
       track: existing?.track ?? null,
       error: error instanceof Error ? error.message : "Unknown error"
     };
+  }
+
+  if (existing && !hasMeaningfulChange(existing, payload)) {
+    return;
   }
 
   await fs.writeFile(OUTPUT_PATH, JSON.stringify(payload, null, 2) + "\n", "utf8");
