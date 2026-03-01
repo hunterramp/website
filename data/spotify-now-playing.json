@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-02-28T23:33:26.950Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-01T01:09:29.394Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "JESUS IS COMING BACK SOON",
+    "name": "Be Mine",
     "artists": [
-      "Forrest Frank",
-      "Josiah Queen"
+      "GIO DARA"
     ],
-    "album": "JESUS IS COMING BACK SOON",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273fe6965e6eddc1ddee52fdc24",
-    "spotifyUrl": "https://open.spotify.com/track/3lDONs5jdDxJIHovAwgtsc"
+    "album": "Be Mine",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739320947dcd15a5a43e48c6b8",
+    "spotifyUrl": "https://open.spotify.com/track/4vB4e8oopvmeARMW9na82S"
   }
 }
