@@ -1,14 +1,16 @@
 {
-  "updatedAt": "2026-03-01T16:45:22.040Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-01T17:13:28.828Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "kick it",
+    "name": "Take Me Home",
     "artists": [
-      "asiris"
+      "Booshle G.",
+      "ZUBIN",
+      "Paul Timitch"
     ],
-    "album": "kick it",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e1ff2084822a9bae8a5fbf12",
-    "spotifyUrl": "https://open.spotify.com/track/3hCqmlLJM7NerheUX0HQOS"
+    "album": "I Was Never Alone",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27357b8d3b9770f840f5a8d8c75",
+    "spotifyUrl": "https://open.spotify.com/track/1I81vebTwzTPq0AQv1VXUK"
   }
 }
