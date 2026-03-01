@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-01T19:13:59.804Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-01T19:34:14.369Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "My Love!",
+    "name": "I Needed You",
     "artists": [
-      "Mark Ambor"
+      "The Astronomers"
     ],
-    "album": "Rockwood",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273da33127f62acdb0aca585e92",
-    "spotifyUrl": "https://open.spotify.com/track/6m3ut7hv5Z1RrySwyrKXto"
+    "album": "I Needed You",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737a0496e9e2cbd3d65b3bb8c0",
+    "spotifyUrl": "https://open.spotify.com/track/4I5tmzoEJrRFaSlDsOctTm"
   }
 }
