@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-01T01:09:29.394Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-01T03:47:42.955Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Be Mine",
+    "name": "Days Like This",
     "artists": [
-      "GIO DARA"
+      "Late Night Thoughts"
     ],
-    "album": "Be Mine",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739320947dcd15a5a43e48c6b8",
-    "spotifyUrl": "https://open.spotify.com/track/4vB4e8oopvmeARMW9na82S"
+    "album": "Days Like This",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734e31946e6bd32bc79e00d99d",
+    "spotifyUrl": "https://open.spotify.com/track/610RtJy2fSy6Rq3UHFUO8L"
   }
 }
