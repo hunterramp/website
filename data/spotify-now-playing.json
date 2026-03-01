@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-01T03:47:42.955Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-01T07:02:34.388Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Days Like This",
+    "name": "Half n' Half",
     "artists": [
-      "Late Night Thoughts"
+      "The Figs"
     ],
-    "album": "Days Like This",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2734e31946e6bd32bc79e00d99d",
-    "spotifyUrl": "https://open.spotify.com/track/610RtJy2fSy6Rq3UHFUO8L"
+    "album": "The Figs Present: The Figs",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d06ebed5d015ce4144f3e8d2",
+    "spotifyUrl": "https://open.spotify.com/track/2M9xzA7NGL8HAFmxQmdtbo"
   }
 }
