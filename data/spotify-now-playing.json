@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-01T19:34:14.369Z",
+  "updatedAt": "2026-03-01T19:50:57.008Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "I Needed You",
+    "name": "Here (with Chris Stapleton)",
     "artists": [
-      "The Astronomers"
+      "Mumford & Sons",
+      "Chris Stapleton"
     ],
-    "album": "I Needed You",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737a0496e9e2cbd3d65b3bb8c0",
-    "spotifyUrl": "https://open.spotify.com/track/4I5tmzoEJrRFaSlDsOctTm"
+    "album": "Prizefighter",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273192f60a400ee278d0fa10d8d",
+    "spotifyUrl": "https://open.spotify.com/track/5ovPv5nkmtM7fCPvr3OOE6"
   }
 }
