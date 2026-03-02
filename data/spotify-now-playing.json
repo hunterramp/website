@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-02T17:03:47.697Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-02T21:29:44.561Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "The Wonderful Blood",
+    "name": "God Made Me",
     "artists": [
-      "Tiffany Hudson"
+      "Nic D",
+      "Nate Good"
     ],
-    "album": "The Wonderful Blood",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e46e25e1cb5bb9849739b357",
-    "spotifyUrl": "https://open.spotify.com/track/4o5NDuOZEosSywp6kiWZ4D"
+    "album": "God Made Me",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d80f82bac7f7f0d86f3349cf",
+    "spotifyUrl": "https://open.spotify.com/track/5PN91I9BmG44rvkRlhTM6r"
   }
 }
