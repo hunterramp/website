@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-02T22:51:50.657Z",
+  "updatedAt": "2026-03-02T23:14:48.861Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "demons (with Reagan James Broome)",
+    "name": "Weight Off My Shoulders",
     "artists": [
-      "Josiah Queen",
-      "Reagan James Broome"
+      "Booshle G."
     ],
-    "album": "demons (with Reagan James Broome)",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27313aeb65ff758dc6b26f03c89",
-    "spotifyUrl": "https://open.spotify.com/track/4Z4Dhup3HkgzHuAuHqMXRd"
+    "album": "I Was Never Alone",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27357b8d3b9770f840f5a8d8c75",
+    "spotifyUrl": "https://open.spotify.com/track/0VgAHqyeREPO2ygEgWCZX4"
   }
 }
