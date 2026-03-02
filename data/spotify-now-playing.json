@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-02T16:07:14.268Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-02T17:03:47.697Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Adonai",
+    "name": "The Wonderful Blood",
     "artists": [
-      "Chris Renzema"
+      "Tiffany Hudson"
     ],
-    "album": "I'll Be the Branches",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c6f7287ea2145fedaf7e105d",
-    "spotifyUrl": "https://open.spotify.com/track/4mD8hFaam1xG91Od3O3X8F"
+    "album": "The Wonderful Blood",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e46e25e1cb5bb9849739b357",
+    "spotifyUrl": "https://open.spotify.com/track/4o5NDuOZEosSywp6kiWZ4D"
   }
 }
