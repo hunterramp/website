@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-02T06:04:56.865Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-02T16:07:14.268Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Begin Again",
+    "name": "Adonai",
     "artists": [
-      "Mumford & Sons"
+      "Chris Renzema"
     ],
-    "album": "Prizefighter",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273192f60a400ee278d0fa10d8d",
-    "spotifyUrl": "https://open.spotify.com/track/6P2JsIp9MjtJ959p9pfRfn"
+    "album": "I'll Be the Branches",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c6f7287ea2145fedaf7e105d",
+    "spotifyUrl": "https://open.spotify.com/track/4mD8hFaam1xG91Od3O3X8F"
   }
 }
