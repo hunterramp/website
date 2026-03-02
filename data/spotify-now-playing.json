@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-02T21:29:44.561Z",
+  "updatedAt": "2026-03-02T21:56:53.113Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "God Made Me",
+    "name": "honeydew (praise the Lord)",
     "artists": [
-      "Nic D",
-      "Nate Good"
+      "Strings & Heart"
     ],
-    "album": "God Made Me",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d80f82bac7f7f0d86f3349cf",
-    "spotifyUrl": "https://open.spotify.com/track/5PN91I9BmG44rvkRlhTM6r"
+    "album": "Plastic Wine",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d8285573731927843da749bf",
+    "spotifyUrl": "https://open.spotify.com/track/4KCYOKK24pqiaupXeAH4Ln"
   }
 }
