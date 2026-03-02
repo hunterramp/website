@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-02T21:56:53.113Z",
+  "updatedAt": "2026-03-02T22:20:58.719Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "honeydew (praise the Lord)",
+    "name": "Still Spinnin",
     "artists": [
-      "Strings & Heart"
+      "Connor Price",
+      "Bens"
     ],
-    "album": "Plastic Wine",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d8285573731927843da749bf",
-    "spotifyUrl": "https://open.spotify.com/track/4KCYOKK24pqiaupXeAH4Ln"
+    "album": "Still Spinnin",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cde57045f2b076f96076f765",
+    "spotifyUrl": "https://open.spotify.com/track/2PiKEJTjUKRt8ZjDDVWoj5"
   }
 }
