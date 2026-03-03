@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-03T16:42:39.047Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-03T17:28:37.004Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Trust",
+    "name": "Here (with Chris Stapleton)",
     "artists": [
-      "Pat Barrett"
+      "Mumford & Sons",
+      "Chris Stapleton"
     ],
-    "album": "I've Got A Fire",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e806b6d7535bf4b428c1eaf4",
-    "spotifyUrl": "https://open.spotify.com/track/75LpEUePoMEz83GOrILjFo"
+    "album": "Prizefighter",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273192f60a400ee278d0fa10d8d",
+    "spotifyUrl": "https://open.spotify.com/track/5ovPv5nkmtM7fCPvr3OOE6"
   }
 }
