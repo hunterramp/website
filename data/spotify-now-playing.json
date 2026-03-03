@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-03T15:58:24.890Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-03T16:42:39.047Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "lonely cross (Live from Two Palms)",
+    "name": "Trust",
     "artists": [
-      "Matt Crocker"
+      "Pat Barrett"
     ],
-    "album": "interlude (Live from Two Palms)",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732fe1da7d2af8584663e18c4c",
-    "spotifyUrl": "https://open.spotify.com/track/36YCD7Jn3iZzw8fgx5rqmo"
+    "album": "I've Got A Fire",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e806b6d7535bf4b428c1eaf4",
+    "spotifyUrl": "https://open.spotify.com/track/75LpEUePoMEz83GOrILjFo"
   }
 }
