@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-03T10:03:39.306Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-03T15:58:24.890Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Til I'm Gone",
+    "name": "lonely cross (Live from Two Palms)",
     "artists": [
-      "Mitch Gorman"
+      "Matt Crocker"
     ],
-    "album": "Til I'm Gone",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f58e1d8f81afa05a6ad89daf",
-    "spotifyUrl": "https://open.spotify.com/track/2rLLk9R67ftbAhF1yRbSZi"
+    "album": "interlude (Live from Two Palms)",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2732fe1da7d2af8584663e18c4c",
+    "spotifyUrl": "https://open.spotify.com/track/36YCD7Jn3iZzw8fgx5rqmo"
   }
 }
