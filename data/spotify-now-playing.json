@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-03T02:06:29.554Z",
+  "updatedAt": "2026-03-03T04:22:06.671Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Lighthouse",
+    "name": "EoO",
     "artists": [
-      "Late Night Thoughts"
+      "Bad Bunny"
     ],
-    "album": "Travel On (Deluxe)",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395723244de4556492ded45f5",
-    "spotifyUrl": "https://open.spotify.com/track/44aL3YIGFQgy0M3R0m3qbL"
+    "album": "DeBÍ TiRAR MáS FOToS",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411",
+    "spotifyUrl": "https://open.spotify.com/track/6J5kc12BW5HuP3d7C3vvx8"
   }
 }
