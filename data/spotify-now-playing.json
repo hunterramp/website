@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-03T04:22:06.671Z",
+  "updatedAt": "2026-03-03T05:30:27.572Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "EoO",
+    "name": "Bubba",
     "artists": [
-      "Bad Bunny"
+      "Steinza"
     ],
-    "album": "DeBÍ TiRAR MáS FOToS",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bbd45c8d36e0e045ef640411",
-    "spotifyUrl": "https://open.spotify.com/track/6J5kc12BW5HuP3d7C3vvx8"
+    "album": "Steinza Was Here!",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349e52b69c10bd0fa67cd3202",
+    "spotifyUrl": "https://open.spotify.com/track/2nXSmYLYHqWbscSFTyu5Su"
   }
 }
