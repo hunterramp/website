@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-03T05:30:27.572Z",
+  "updatedAt": "2026-03-03T10:03:39.306Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Bubba",
+    "name": "Til I'm Gone",
     "artists": [
-      "Steinza"
+      "Mitch Gorman"
     ],
-    "album": "Steinza Was Here!",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349e52b69c10bd0fa67cd3202",
-    "spotifyUrl": "https://open.spotify.com/track/2nXSmYLYHqWbscSFTyu5Su"
+    "album": "Til I'm Gone",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f58e1d8f81afa05a6ad89daf",
+    "spotifyUrl": "https://open.spotify.com/track/2rLLk9R67ftbAhF1yRbSZi"
   }
 }
