@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-03T17:28:37.004Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-03T18:04:45.500Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Here (with Chris Stapleton)",
+    "name": "Clover",
     "artists": [
-      "Mumford & Sons",
-      "Chris Stapleton"
+      "Mumford & Sons"
     ],
     "album": "Prizefighter",
     "imageUrl": "https://i.scdn.co/image/ab67616d0000b273192f60a400ee278d0fa10d8d",
-    "spotifyUrl": "https://open.spotify.com/track/5ovPv5nkmtM7fCPvr3OOE6"
+    "spotifyUrl": "https://open.spotify.com/track/0dyrvjjcmv2S9PHGd7UJ2A"
   }
 }
