@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-03T19:48:23.547Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-03T20:20:52.909Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Take You At Your Word (with Benjamin William Hastings) - Live",
+    "name": "Good To Be",
     "artists": [
-      "Cody Carnes",
-      "Benjamin William Hastings"
+      "Mark Ambor"
     ],
-    "album": "God Is Good! (Live)",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cfd6e018aafff6c1a740e895",
-    "spotifyUrl": "https://open.spotify.com/track/7k6FvX8WhPoYDHMl4QCavz"
+    "album": "Rockwood",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273da33127f62acdb0aca585e92",
+    "spotifyUrl": "https://open.spotify.com/track/2tnSBYJyGGYD0Gbn07tTHZ"
   }
 }
