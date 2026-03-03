@@ -952,38 +952,6 @@
       }
     }
 
-    function resizeGoogleAppointmentModalForMobile() {
-      if (!window.matchMedia("(max-width: 820px)").matches) {
-        return;
-      }
-
-      var frames = document.querySelectorAll('iframe[src*="calendar.google.com/calendar/appointments"]');
-      for (var i = 0; i < frames.length; i += 1) {
-        var frame = frames[i];
-        frame.style.setProperty("width", "96vw", "important");
-        frame.style.setProperty("max-width", "96vw", "important");
-        frame.style.setProperty("height", "90dvh", "important");
-        frame.style.setProperty("max-height", "90dvh", "important");
-
-        var node = frame.parentElement;
-        var depth = 0;
-        while (node && node !== document.body && depth < 6) {
-          node.style.setProperty("width", "96vw", "important");
-          node.style.setProperty("max-width", "96vw", "important");
-          depth += 1;
-          node = node.parentElement;
-        }
-      }
-    }
-
-    window.addEventListener("load", function () {
-      resizeGoogleAppointmentModalForMobile();
-      var appointmentModalObserver = new MutationObserver(function () {
-        resizeGoogleAppointmentModalForMobile();
-      });
-      appointmentModalObserver.observe(document.body, { childList: true, subtree: true });
-    });
-
     document.getElementById("wesley-age").textContent = getAge("2021-02-04");
     document.getElementById("charlotte-age").textContent = getAge("2023-03-17");
     document.getElementById("software-age").textContent = getAge("2017-1-1");
