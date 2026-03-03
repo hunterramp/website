@@ -457,7 +457,7 @@
       border: 1px solid var(--border);
       background: rgba(255,255,255,0.04);
       color: var(--text);
-      font-size: 14px;
+      font-size: 16px;
       padding: 10px 11px;
       font-family: inherit;
     }
@@ -661,10 +661,11 @@
             <div class="ctaRow" style="margin-top: 12px;">
               <a class="btn primary" href="mailto:hunter@hunterramp.com">Email</a>
               <a class="btn" href="https://www.linkedin.com/in/hunterramp/">LinkedIn</a>
-              <button class="btn" id="request-resume-btn" type="button">Request Resumé</button>
+              <button class="btn" id="request-resume-btn" type="button">Request Resume</button>
+              <button class="btn" id="book-appointment-btn" type="button">Book Appointment</button>
             </div>
             <div class="resumeConfirm" id="resume-request-confirm" hidden>
-              Request sent. If approved, I'll email you a PDF copy of my resumé.
+              Request sent. If approved, I'll email you a PDF copy of my resume.
             </div>
           </div>
         </div>
@@ -678,7 +679,7 @@
 
   <dialog id="resume-request-dialog" aria-labelledby="resume-request-title">
     <form class="dialogInner" id="resume-request-form">
-      <h3 class="dialogTitle" id="resume-request-title">Request My Resumé</h3>
+      <h3 class="dialogTitle" id="resume-request-title">Request My Resume</h3>
       <p class="dialogLead">
         Share a few details and I'll review and email you back.
       </p>
@@ -705,7 +706,7 @@
 
       <div class="dialogActions">
         <button class="btn" type="button" id="resume-cancel-btn">Cancel</button>
-        <button class="btn primary" type="submit">Request Resumé</button>
+        <button class="btn primary" type="submit">Request Resume</button>
       </div>
     </form>
   </dialog>
@@ -896,9 +897,15 @@
     var resumeForm = document.getElementById("resume-request-form");
     var resumeConfirm = document.getElementById("resume-request-confirm");
     var RESUME_REQUEST_API = "https://hunterramp-resume-api.hunterramp.workers.dev/api/resume-request";
+    var APPOINTMENT_URL = "https://calendar.google.com/calendar/appointments/schedules/AcZssZ3bGbN8-U_uklvZbHi6lKsNNmU2jcg9xZtplDgm1j_8BgdUQ1VueHrFcAMBoqwkZwKk5M7M8D9-?gv=true";
+    var resumeConfirmTimer = null;
 
     document.getElementById("request-resume-btn").addEventListener("click", function () {
       resumeDialog.showModal();
+    });
+
+    document.getElementById("book-appointment-btn").addEventListener("click", function () {
+      window.open(APPOINTMENT_URL, "_blank", "noopener,noreferrer");
     });
 
     document.getElementById("resume-cancel-btn").addEventListener("click", function () {
@@ -941,6 +948,13 @@
           resumeDialog.close();
           resumeForm.reset();
           resumeConfirm.hidden = false;
+          if (resumeConfirmTimer) {
+            clearTimeout(resumeConfirmTimer);
+          }
+          resumeConfirmTimer = setTimeout(function () {
+            resumeConfirm.hidden = true;
+            resumeConfirmTimer = null;
+          }, 5000);
         })
         .catch(function () {
           alert("Could not send request right now. Please try again in a minute.");
