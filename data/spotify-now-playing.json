@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-02T23:43:27.828Z",
+  "updatedAt": "2026-03-03T02:06:29.554Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Voicemail",
+    "name": "Lighthouse",
     "artists": [
-      "Knox"
+      "Late Night Thoughts"
     ],
-    "album": "Going, Going, Gone",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27349a98d2c7facc18a50b3a004",
-    "spotifyUrl": "https://open.spotify.com/track/1PTJOtcCegYxF0TGsYjofG"
+    "album": "Travel On (Deluxe)",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27395723244de4556492ded45f5",
+    "spotifyUrl": "https://open.spotify.com/track/44aL3YIGFQgy0M3R0m3qbL"
   }
 }
