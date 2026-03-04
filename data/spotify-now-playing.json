@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-04T19:54:23.371Z",
+  "updatedAt": "2026-03-04T20:21:02.722Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "forever and a day",
+    "name": "Already gone",
     "artists": [
-      "Abe Parker"
+      "Henrik"
     ],
-    "album": "Phases",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cddd34a1f0bb8afab3198d2c",
-    "spotifyUrl": "https://open.spotify.com/track/3XCufxvpIzXee8d8Mak9jq"
+    "album": "Already gone",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738de2c0b557759bf7479f25dc",
+    "spotifyUrl": "https://open.spotify.com/track/7q3a2Eirk4TmtrwZHQ6D9g"
   }
 }
