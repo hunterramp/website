@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-04T16:00:52.653Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-04T19:54:23.371Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "demons (with Reagan James Broome)",
+    "name": "forever and a day",
     "artists": [
-      "Josiah Queen",
-      "Reagan James Broome"
+      "Abe Parker"
     ],
-    "album": "demons (with Reagan James Broome)",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27313aeb65ff758dc6b26f03c89",
-    "spotifyUrl": "https://open.spotify.com/track/4Z4Dhup3HkgzHuAuHqMXRd"
+    "album": "Phases",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cddd34a1f0bb8afab3198d2c",
+    "spotifyUrl": "https://open.spotify.com/track/3XCufxvpIzXee8d8Mak9jq"
   }
 }
