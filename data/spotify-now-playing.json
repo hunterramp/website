@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-04T22:19:35.684Z",
+  "updatedAt": "2026-03-04T22:54:16.876Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "All to myself",
+    "name": "Changes",
     "artists": [
-      "Henrik",
-      "Nic D"
+      "Charlie Puth"
     ],
-    "album": "All to myself",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bbba817dc7cb7dabe59f8f8c",
-    "spotifyUrl": "https://open.spotify.com/track/1h6eOzYGXmIRaZ77z1f6O5"
+    "album": "Changes",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730bd42a81fa579f7a8d7c1312",
+    "spotifyUrl": "https://open.spotify.com/track/4kUI0vuDd0Zub4IvxxNreM"
   }
 }
