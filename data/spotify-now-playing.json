@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-04T15:22:18.288Z",
+  "updatedAt": "2026-03-04T16:00:52.653Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Lover Of My Soul",
+    "name": "demons (with Reagan James Broome)",
     "artists": [
-      "Dan Bremnes"
+      "Josiah Queen",
+      "Reagan James Broome"
     ],
-    "album": "Into The Wild",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735802a162afeeb9620085c930",
-    "spotifyUrl": "https://open.spotify.com/track/7rSqBHmI1I6f8GPj9axe9o"
+    "album": "demons (with Reagan James Broome)",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27313aeb65ff758dc6b26f03c89",
+    "spotifyUrl": "https://open.spotify.com/track/4Z4Dhup3HkgzHuAuHqMXRd"
   }
 }
