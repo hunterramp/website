@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-04T20:21:02.722Z",
+  "updatedAt": "2026-03-04T20:53:25.537Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "Already gone",
+    "name": "Take Your Place",
     "artists": [
-      "Henrik"
+      "Michael Sanzone"
     ],
-    "album": "Already gone",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738de2c0b557759bf7479f25dc",
-    "spotifyUrl": "https://open.spotify.com/track/7q3a2Eirk4TmtrwZHQ6D9g"
+    "album": "Take Your Place",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332771402d70b23de7a2b5aa8",
+    "spotifyUrl": "https://open.spotify.com/track/46XX79te6gVA3BFAmZszax"
   }
 }
