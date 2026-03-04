@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-04T13:47:32.107Z",
+  "updatedAt": "2026-03-04T15:22:18.288Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "I FEEL HOME",
+    "name": "Lover Of My Soul",
     "artists": [
-      "Joseph O'Brien"
+      "Dan Bremnes"
     ],
-    "album": "I FEEL HOME",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736dde02fe339cb7ad6fadc6fd",
-    "spotifyUrl": "https://open.spotify.com/track/0BFYrL6UGqLnQuNdnTb9at"
+    "album": "Into The Wild",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735802a162afeeb9620085c930",
+    "spotifyUrl": "https://open.spotify.com/track/7rSqBHmI1I6f8GPj9axe9o"
   }
 }
