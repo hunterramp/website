@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-03T20:20:52.909Z",
+  "updatedAt": "2026-03-04T01:46:35.931Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Good To Be",
+    "name": "Father Figure",
     "artists": [
-      "Mark Ambor"
+      "Taylor Swift"
     ],
-    "album": "Rockwood",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273da33127f62acdb0aca585e92",
-    "spotifyUrl": "https://open.spotify.com/track/2tnSBYJyGGYD0Gbn07tTHZ"
+    "album": "The Life of a Showgirl",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d7812467811a7da6e6a44902",
+    "spotifyUrl": "https://open.spotify.com/track/03bTIHJElXZ0O0jqOQvAbY"
   }
 }
