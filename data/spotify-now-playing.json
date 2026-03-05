@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-05T15:32:46.296Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-05T17:48:33.100Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Lookin Up",
+    "name": "Start Living",
     "artists": [
-      "Fulton Lee",
-      "Nic D"
+      "David Dunn"
     ],
-    "album": "Lookin Up",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27393f375fc087b1ffc71079fe0",
-    "spotifyUrl": "https://open.spotify.com/track/1samQx2FYPhHo7320xSiZy"
+    "album": "Start Living",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731daa30739d0c797be87ead3e",
+    "spotifyUrl": "https://open.spotify.com/track/1UnmH9FrCiUhxQ9Ua8RBvy"
   }
 }
