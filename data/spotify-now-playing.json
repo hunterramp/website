@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-05T06:01:01.925Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-05T15:32:46.296Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Sycamore Park",
+    "name": "Lookin Up",
     "artists": [
+      "Fulton Lee",
       "Nic D"
     ],
-    "album": "SYCAMORE",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ef3326e81ae6fbc93cab03c2",
-    "spotifyUrl": "https://open.spotify.com/track/65En1CoFuNM1Wj6lMDlNFk"
+    "album": "Lookin Up",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27393f375fc087b1ffc71079fe0",
+    "spotifyUrl": "https://open.spotify.com/track/1samQx2FYPhHo7320xSiZy"
   }
 }
