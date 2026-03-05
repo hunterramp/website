@@ -1,16 +1,14 @@
 {
-  "updatedAt": "2026-03-05T21:05:13.682Z",
+  "updatedAt": "2026-03-05T21:48:48.812Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "Coming Clean",
+    "name": "Who's This Man",
     "artists": [
-      "Ian Austin",
-      "Haddon",
-      "William Toll"
+      "Joseph O'Brien"
     ],
-    "album": "Coming Clean",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733ffd76e6b727c208d1936b93",
-    "spotifyUrl": "https://open.spotify.com/track/6pkstlQTfCmJ8kILpfFx1R"
+    "album": "Who's This Man",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273cf522b74e3c976eae0e366c1",
+    "spotifyUrl": "https://open.spotify.com/track/6IIK2gS1oVXNZ174NyzRWI"
   }
 }
