@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-05T17:48:33.100Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-05T19:05:06.553Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Start Living",
+    "name": "The Stand (Amen)",
     "artists": [
-      "David Dunn"
+      "Phil Wickham"
     ],
-    "album": "Start Living",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731daa30739d0c797be87ead3e",
-    "spotifyUrl": "https://open.spotify.com/track/1UnmH9FrCiUhxQ9Ua8RBvy"
+    "album": "Song Of The Saints",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e71ba943309d2763ce20a5a9",
+    "spotifyUrl": "https://open.spotify.com/track/2bFZNTrKGU2NovAq9tX6T2"
   }
 }
