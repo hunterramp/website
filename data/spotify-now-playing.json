@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-05T19:05:06.553Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-05T19:59:14.042Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "The Stand (Amen)",
+    "name": "Take Your Place",
     "artists": [
-      "Phil Wickham"
+      "Michael Sanzone"
     ],
-    "album": "Song Of The Saints",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e71ba943309d2763ce20a5a9",
-    "spotifyUrl": "https://open.spotify.com/track/2bFZNTrKGU2NovAq9tX6T2"
+    "album": "Take Your Place",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332771402d70b23de7a2b5aa8",
+    "spotifyUrl": "https://open.spotify.com/track/46XX79te6gVA3BFAmZszax"
   }
 }
