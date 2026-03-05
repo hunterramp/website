@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-05T01:03:05.322Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-05T03:36:29.960Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Landslide",
+    "name": "Rich",
     "artists": [
-      "Judah & the Lion"
+      "ELI GABLE"
     ],
-    "album": "Revival",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a3f6690ed9f1f0ce21136214",
-    "spotifyUrl": "https://open.spotify.com/track/5leKOOnMx0lcX0ElZxeI3K"
+    "album": "Rich",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27372b0f5e46ef39690b4233b95",
+    "spotifyUrl": "https://open.spotify.com/track/4tNPvDMaT7GMv5pQQqkesB"
   }
 }
