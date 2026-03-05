@@ -1,14 +1,16 @@
 {
-  "updatedAt": "2026-03-05T19:59:14.042Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-05T21:05:13.682Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Take Your Place",
+    "name": "Coming Clean",
     "artists": [
-      "Michael Sanzone"
+      "Ian Austin",
+      "Haddon",
+      "William Toll"
     ],
-    "album": "Take Your Place",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27332771402d70b23de7a2b5aa8",
-    "spotifyUrl": "https://open.spotify.com/track/46XX79te6gVA3BFAmZszax"
+    "album": "Coming Clean",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733ffd76e6b727c208d1936b93",
+    "spotifyUrl": "https://open.spotify.com/track/6pkstlQTfCmJ8kILpfFx1R"
   }
 }
