@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-06T22:51:51.770Z",
+  "updatedAt": "2026-03-06T23:16:57.827Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Where Would I Be",
+    "name": "Mama Said",
     "artists": [
-      "Peter Burton"
+      "MC4D",
+      "Kenley"
     ],
-    "album": "Where Would I Be",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27318e5051ba8e5c844e059cb85",
-    "spotifyUrl": "https://open.spotify.com/track/0H8B4yrZmLIYe7Rnjp0ip1"
+    "album": "Mama Said",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ff49f7c13ba16defa048552b",
+    "spotifyUrl": "https://open.spotify.com/track/4bR85fyG1N5zcAuSFM56Kc"
   }
 }
