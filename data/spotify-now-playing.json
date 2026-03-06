@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-06T17:50:51.497Z",
+  "updatedAt": "2026-03-06T20:52:16.175Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Go With You",
+    "name": "Old Neptune, He's Roaring",
     "artists": [
-      "Ian Austin",
-      "William Toll"
+      "Brian Sauvé"
     ],
-    "album": "Go With You",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737f907f09411474326b0c754c",
-    "spotifyUrl": "https://open.spotify.com/track/2pLzhCPHNhsJeHLtwXrR4j"
+    "album": "Hearth Songs",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27354b25d80fa4fab2b6eca8830",
+    "spotifyUrl": "https://open.spotify.com/track/0veopibBdS1GzafSOXYxfL"
   }
 }
