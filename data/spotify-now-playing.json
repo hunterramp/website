@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-06T16:25:25.346Z",
+  "updatedAt": "2026-03-06T17:50:51.497Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Highlands",
+    "name": "Go With You",
     "artists": [
-      "NEEDTOBREATHE"
+      "Ian Austin",
+      "William Toll"
     ],
-    "album": "Highlands",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731e8a5020e296241f5794ab07",
-    "spotifyUrl": "https://open.spotify.com/track/48s5Mvr0pVqXlvXKEmArDx"
+    "album": "Go With You",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737f907f09411474326b0c754c",
+    "spotifyUrl": "https://open.spotify.com/track/2pLzhCPHNhsJeHLtwXrR4j"
   }
 }
