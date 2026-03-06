@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-05T23:32:12.009Z",
+  "updatedAt": "2026-03-06T02:49:47.479Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Bible Days",
+    "name": "Soul That Got Away",
     "artists": [
-      "Cade Biers"
+      "Luke Bower"
     ],
-    "album": "Bible Days",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730286fef45854eb8f4da3c72d",
-    "spotifyUrl": "https://open.spotify.com/track/7leD7H6pF3GWAe2HxHapZL"
+    "album": "Man On Fire (Deluxe)",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e1a0e5bc78cd01b39a8f8323",
+    "spotifyUrl": "https://open.spotify.com/track/0Q5KqZxFqA1R2uLhv0VLRs"
   }
 }
