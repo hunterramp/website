@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-06T04:25:32.696Z",
+  "updatedAt": "2026-03-06T15:52:23.420Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Glorious Day - Radio Version",
+    "name": "How Bout Now?",
     "artists": [
-      "Passion",
-      "Kristian Stanfill"
+      "ryman leon"
     ],
-    "album": "Glorious Day (Radio Version)",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0930f72d309718e72f42af8",
-    "spotifyUrl": "https://open.spotify.com/track/2uCLhG4UKRErEUpjsXBaeD"
+    "album": "How Bout Now?",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c09c39a92ac69a4fb753e035",
+    "spotifyUrl": "https://open.spotify.com/track/2GGQWVOoSOpTjLHAfYLdYj"
   }
 }
