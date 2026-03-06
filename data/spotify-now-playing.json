@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-06T21:18:46.162Z",
+  "updatedAt": "2026-03-06T22:51:51.770Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "holding you",
+    "name": "Where Would I Be",
     "artists": [
-      "Meyta"
+      "Peter Burton"
     ],
-    "album": "holding you",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273686bab2cb724ea3ea0bf0db8",
-    "spotifyUrl": "https://open.spotify.com/track/4ocIC700ilDATjzcPQBu3Z"
+    "album": "Where Would I Be",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27318e5051ba8e5c844e059cb85",
+    "spotifyUrl": "https://open.spotify.com/track/0H8B4yrZmLIYe7Rnjp0ip1"
   }
 }
