@@ -1,14 +1,15 @@
 {
-  "updatedAt": "2026-03-06T02:49:47.479Z",
+  "updatedAt": "2026-03-06T04:25:32.696Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "Soul That Got Away",
+    "name": "Glorious Day - Radio Version",
     "artists": [
-      "Luke Bower"
+      "Passion",
+      "Kristian Stanfill"
     ],
-    "album": "Man On Fire (Deluxe)",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e1a0e5bc78cd01b39a8f8323",
-    "spotifyUrl": "https://open.spotify.com/track/0Q5KqZxFqA1R2uLhv0VLRs"
+    "album": "Glorious Day (Radio Version)",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0930f72d309718e72f42af8",
+    "spotifyUrl": "https://open.spotify.com/track/2uCLhG4UKRErEUpjsXBaeD"
   }
 }
