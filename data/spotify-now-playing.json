@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-06T15:52:23.420Z",
+  "updatedAt": "2026-03-06T16:25:25.346Z",
   "isPlaying": false,
   "source": "recently-played",
   "track": {
-    "name": "How Bout Now?",
+    "name": "Highlands",
     "artists": [
-      "ryman leon"
+      "NEEDTOBREATHE"
     ],
-    "album": "How Bout Now?",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c09c39a92ac69a4fb753e035",
-    "spotifyUrl": "https://open.spotify.com/track/2GGQWVOoSOpTjLHAfYLdYj"
+    "album": "Highlands",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731e8a5020e296241f5794ab07",
+    "spotifyUrl": "https://open.spotify.com/track/48s5Mvr0pVqXlvXKEmArDx"
   }
 }
