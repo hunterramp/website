@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-06T23:16:57.827Z",
-  "isPlaying": false,
-  "source": "recently-played",
+  "updatedAt": "2026-03-07T15:52:30.574Z",
+  "isPlaying": true,
+  "source": "currently-playing",
   "track": {
-    "name": "Mama Said",
+    "name": "THANKFUL",
     "artists": [
-      "MC4D",
-      "Kenley"
+      "Forrest Frank"
     ],
-    "album": "Mama Said",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ff49f7c13ba16defa048552b",
-    "spotifyUrl": "https://open.spotify.com/track/4bR85fyG1N5zcAuSFM56Kc"
+    "album": "THANKFUL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273685f4589739487dfa5cf662c",
+    "spotifyUrl": "https://open.spotify.com/track/3q7GRmWPTNo5S6CEq6SURW"
   }
 }
