@@ -1,15 +1,14 @@
 {
-  "updatedAt": "2026-03-07T16:57:52.354Z",
-  "isPlaying": true,
-  "source": "currently-playing",
+  "updatedAt": "2026-03-07T17:17:35.740Z",
+  "isPlaying": false,
+  "source": "recently-played",
   "track": {
-    "name": "Dabble",
+    "name": "Passenger Seat",
     "artists": [
-      "Connor Price",
-      "Nic D"
+      "Claire Leslie"
     ],
-    "album": "ICONIC",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735e1eb4912ebf4ce2d3fd30eb",
-    "spotifyUrl": "https://open.spotify.com/track/2Sp9H1DOeQYCfHdFxo1aju"
+    "album": "Passenger Seat",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273851d1bd18ec0183522e8af0a",
+    "spotifyUrl": "https://open.spotify.com/track/67GgkBHYX6x3qzXkNqS5oJ"
   }
 }
