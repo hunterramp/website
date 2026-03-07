@@ -1,14 +1,14 @@
 {
-  "updatedAt": "2026-03-07T16:13:55.766Z",
+  "updatedAt": "2026-03-07T16:43:50.490Z",
   "isPlaying": true,
   "source": "currently-playing",
   "track": {
-    "name": "GOD'S GOT MY BACK",
+    "name": "Beat Yourself Up",
     "artists": [
-      "Forrest Frank"
+      "Charlie Puth"
     ],
-    "album": "CHILD OF GOD II (BACK TO BACK)",
-    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b2bf3a797069dd7d80d9da6b",
-    "spotifyUrl": "https://open.spotify.com/track/1hRNPO5VMUdIXijSs2DAgt"
+    "album": "Beat Yourself Up",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27398b85fec496f0b04775e0293",
+    "spotifyUrl": "https://open.spotify.com/track/7dr9uWtuRR6sdFpRjk0mnN"
   }
 }
